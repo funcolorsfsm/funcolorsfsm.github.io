@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+	width: 130px;
+    height: 120px;
+    background: yellow;
+    position :relative;
+    animation: mainloop 5s infinite;
+    
+    
+    }
+
+/* Standard syntax */
+@keyframes mainloop{
+var distance = 0
+    0% {top: 0px;}
+    25% {top: distancepx;}
+    50% {top: distancepx;}
+    75% {top: 0px;}
+	90% pause;
+}
+@keyframes mydownmove {
+    from {top: 0px;}
+    to {top: 200px;}
+    
+	
+}
+@keyframes pause{
+
+}
+@keyframes myupmove {
+    from {top: 200px;}
+    to {top: 0px;}
+}
+@keyframes pulsing {
+
+
+
+}
+@keyframes blinking {
+
+    0%{opacity:0}
+	100%{opacity:1}
+}
+
+</style>
+<script>
+ var elem = document.getElementById("myAnimation");   
+  var pos = 0;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + 'px'; 
+      elem.style.left = pos + 'px';
+}
+</script>
+</head>
+<body>
+<font color = white>whitess</font>
+<button onclick="up">↑</button><br><br>
+<button onclick="left">←</button><font color = white>wh</font>
+<button onclick="down">↓</button><font color = white>wh</font>
+<button onclick="right">→</button>
+<div></div>
+
+</body>
+</html>
