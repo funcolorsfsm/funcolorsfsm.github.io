@@ -2,7 +2,12 @@
 <html>
 <head>
 <link rel="stylesheet" href="css/main.css">
-</head>
+<script>
+		window.onbeforeunload = function() {
+		  return "Data will be lost if you leave the page, are you sure?";
+		};
+	</script>
+  </head>
 <body>
 
 <div style  = padding-left:100px> <font size = "7" color = "white"><b><br>Flying Spaghetti Monster</b></font><font size = "4" color = "white"> "With him all things are pasta-bowl"</font>
